@@ -1,0 +1,42 @@
+.table td {
+    // padding: 19px 0 17px;
+} 
+
+.page-item{
+    a{  
+        padding: 6px 12px !important;
+        &:hover{
+            background-color: $primary;
+            color:#fff !important;
+        }
+    }
+}
+
+.labelName{
+    font-size:14px;
+}
+
+.adminImg{
+    width: 141px;
+    height: 141px;
+}
+
+.profile{
+    width: 300px;
+}
+
+.expand_less{
+    display: none;
+}
+
+.collapsed .expand_more{
+    display: none;
+}
+
+.collapsed .expand_less{
+    display: block;
+}
+
+.footerBtn{
+    height: 141px;
+}

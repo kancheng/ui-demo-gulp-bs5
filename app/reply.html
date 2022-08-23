@@ -1,0 +1,147 @@
+---
+title: Boostrap Reply
+layout: ./app/index-admin-w5.ejs
+engine: ejs
+current: Text
+---
+
+<main class="navbar-expand-lg container-fluid p-0 pb-5">
+    <div class="container-fluid d-flex px-5 py-5">
+      <h2 class="navbar-brand fw-bold">Assignment</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div class="collapse navbar-collapse d-flex justify-content-between align-items-center" id="navbarNavDropdown">
+        
+        <div class="navbar-nav">
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+            aria-expanded="false">
+                All Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All Courses</a></li>
+              
+            </ul>
+          </div>
+          
+        </div>
+        <!-- icon -->
+        <ul class="pic d-flex align-items-center">
+            <li><a href="#"><span class="material-icons me-4">
+                search
+                </span></a></li>
+            <li><a href="#"><span class="material-icons">
+                notifications_active
+                </span></a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="selectList px-5 mb-2 d-flex justify-content-between">
+      <select class="form-select p-0 border-0 fw-bold text-dark" aria-label="Default select example">
+        <option selected>All (4)</option>
+      </select>
+      <p class="text-gray">2 comments</p>
+    </div>
+<!-- left list -->
+    <div class="container px-5 d-flex">
+          <div class="list-group pe-0 me-3">
+            
+            <a href="#" class="list-group-item list-group-item-action active bg-light border-border-color" aria-current="true">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h5 class="mb-1 text-dark">Chapter Assignment 2</h5>
+                <small class="text-dark">4 hrs ago</small>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-1 fw-bold text-dark">Please check this file…</p>
+                <small class="text-secondary">Emily Wang</small>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action border-border-color">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h5 class="mb-1 text-dark">Chapter Assignment 1</h5>
+                <small class="text-dark">12 hrs ago</small>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-1 fw-bold text-dark">My Homework</p>
+                <small class="text-secondary">David Xu</small>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action border-border-color">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h5 class="mb-1 text-dark">Final Assignment</h5>
+                <small class="text-dark">18 hrs ago</small>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-1 fw-bold text-dark">Have a problem with this…</p>
+                <small class="text-secondary">Tony Wei</small>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action border-border-color">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h5 class="mb-1 text-dark">Final Assignment</h5>
+                <small class="text-dark">19 hrs ago</small>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-1 fw-bold text-dark">Did I do it right?</p>
+                <small class="text-secondary">Christina Lin</small>
+              </div>
+            </a>
+
+          </div>
+<div class="cardMain">
+<!-- card -->
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center py-12">
+    <div>
+      <h5 class="small-font">Chapter Assignment 2 / HTML&CSS</h5>
+      <p class="fw-bold ">Please check this file for me, thanks!</p>
+    </div>
+      <span class="material-symbols-outlined">
+        more_vert
+        </span>
+  </div>
+  <div class="card-body pb-22">
+    <blockquote class="blockquote mb-12">
+      
+      <!-- profile -->
+      <div class="user">
+        <div class="d-flex align-items-center border-0 mb-3">
+          <img class="rounded-circle" src="assets/images/img-w5/emilywang.jpeg" class="card-img-top" alt="user">
+          <div class="ps-2">
+            <p class="fw-bold fs-6">Emily Wang</p>
+            <p class="card-text">10:38 AM (4 hours ago)</p>
+          </div>
+        </div>
+      </div>
+      <div class="commenText border-bottom pb-3 ps-6">
+        <p class="comment mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success bg-light px-1 rounded-1 font-mono">div</code> is bigger than the height of the <code class="text-success bg-light px-1 rounded-1 font-mono">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. 
+          <br>
+          What is the gap or extra space below image?</p>
+          <!--button  -->
+          <a href="#" class="btn btn-light border d-flex fw-bold ps-12 py-2 pe-3 d-inline-flex" download="HW-2-David.zip"><span class="material-symbols-outlined me-2">
+            attach_file
+            </span>
+            HW-2-David.zip</a>
+      </div>
+      
+    </blockquote>
+    <div id="editor" class="editor px-0">
+        <textarea name="" id="" cols="30" rows="10">Reply an answer…</textarea> 
+    </div>
+    <!-- button -->
+<div class="buttonGroup d-flex justify-content-end mt-2">
+    <a href="index-admin-w5.html"><button type="button" class="btn btn-outline-success me-3 px-5 py-2 fw-bold">Cancel</button></a>
+  <button type="button" class="btn btn-success fw-bold px-5 py-2">Reply</button>
+  </div>
+  </div>
+</div>
+  </div>
+      </div>
+  </main>

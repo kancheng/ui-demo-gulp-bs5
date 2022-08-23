@@ -2,5 +2,13 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import './base/base';
+@import './utility/utility';
+@import './layout/layout';
+@import './layout/index';
+@import './layout/reply';
+@import './layout/admin';
 
-@import './layout/index.scss'
+*{
+    // outline: 1px solid black;
+}

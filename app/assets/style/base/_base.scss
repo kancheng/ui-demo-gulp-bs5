@@ -1,0 +1,18 @@
+body {
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+ul, li, p, a{
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}

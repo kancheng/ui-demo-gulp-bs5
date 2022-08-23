@@ -1,0 +1,128 @@
+
+<!-- 
+
+https://github.com/kancheng/ui-demo-gulp-bs5
+
+https://kancheng.github.io/ui-demo-gulp-bs5/
+
+https://github.com/kancheng/ui-demo-gulp-tailwind
+
+https://kancheng.github.io/ui-demo-gulp-tailwind/
+
+https://xd.adobe.com/view/ea9c3e28-6d25-42cb-b6a5-1571c1707f05-bfcf/screen/edcec1ea-3fd4-4b13-8f2a-315d0a7dd790/specs/
+
+Codepen 範例一：https://codepen.io/AliceChiang/pen/PoRBRXM
+
+Codepen 範例二：https://codepen.io/AliceChiang/pen/QWvxRaK
+
+
+Reference : 
+
+Yorkshi
+
+https://yehhsieh.github.io/week5/index.html
+
+https://github.com/yehHsieh/week5
+
+Cola#1583
+
+https://cola865.github.io/week5/#
+
+https://github.com/cola865/week5
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    
+    <wrap class="d-flex">
+      <nav class="navContainer d-flex flex-column justify-content-between bg-light">
+        <div class="navTop">
+          <nav class="navbar pt-0 pb-0">
+            <div class="container ps-5 mb-5 mt-5">
+              <a class="navbar-brand" href="index-admin-w5.html">
+                <img src="assets/images/img-w5/logo-ANSWER.svg" alt="logo" >
+              </a>
+            </div>
+          </nav>
+          <nav class="navbar p-0 bg-light">
+            <div class="navList list-group bg-light">
+              <a href="#" class="d-flex align-items-center list-group-item list-group-item-action active bg-light border-0" aria-current="true">
+                <span class="material-icons me-3">
+                  assessment
+                  </span>
+              Dashboard
+              </a>
+              <a href="#" class="d-flex align-items-center list-group-item list-group-item-action border-0 bg-light">
+                <span class="material-icons me-3">
+                question_answer
+                </span>
+              Question</a>
+              <a href="index-admin-w5.html" class="d-flex align-items-center list-group-item list-group-item-action border-0 bg-light">
+                <span class="material-icons me-3">
+                  assignment
+                  </span>
+              Assignment</a>
+              
+              <a href="#" class="d-flex align-items-center list-group-item list-group-item-action border-0 bg-light">
+                <span class="material-icons me-3">
+                  video_library
+                  </span>
+              Course</a>
+              
+              <a href="admin.html" class="d-flex align-items-center list-group-item list-group-item-action border-0 bg-light">
+                <span class="material-icons me-3">
+                  people_alt
+                  </span>
+              Admin</a>
+  
+              <a href="#" class="d-flex align-items-center list-group-item list-group-item-action border-0 bg-light">
+                <span class="material-icons me-3">
+                  settings
+                  </span>
+              Settings</a>
+            </div>
+          </nav>
+      
+        </div>
+        <div class="user ms-5">
+          <div class="d-flex align-items-center bg-light border-0">
+            <img class="rounded-circle" src="assets/images/img-w5/andychen.jpeg" class="card-img-top" alt="user">
+            <div class="card-body">
+              <p class="fw-bold">Andy Chen</p>
+              <p class="card-text">andy0401@mail.com</p>
+            </div>
+          </div>
+        </div>
+        
+      </nav>
+      
+      <%- contents %>
+    </wrap>
+    
+
+    <!-- <footer class="footer">
+      footer
+    </footer> -->
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
