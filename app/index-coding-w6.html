@@ -92,21 +92,21 @@ current: index
 </section>
 
 <section class="bg-dark">
-  <div class="container py-6 py-md-max">
-    <h2 class="h3 text-center mb-lg position-relative h2-title">你想要學習的程式，都在這裡</h2>
-    <ul class="list-unstyled d-flex list-scroll">
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">JavaScript</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">HTML/CSS</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">SQL</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Java</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">SQL</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Bash/Shell</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Python</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Python</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">PHP</a></li>
-      <li><a href="#" class="btn btn-outline-white px-5 py-4">C++</a></li>
-    </ul>
-  </div>
+    <div class="container py-6 py-md-max">
+        <h2 class="h3 text-center mb-lg position-relative h2-title">你想要學習的程式，都在這裡</h2>
+        <ul class="list-unstyled d-flex list-scroll">
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">JavaScript</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">HTML/CSS</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">SQL</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Java</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">SQL</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Bash/Shell</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Python</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">Python</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4 me-3">PHP</a></li>
+            <li><a href="#" class="btn btn-outline-white px-5 py-4">C++</a></li>
+        </ul>
+    </div>
 </section>
 
 <section class="container py-6 py-md-max">
@@ -267,10 +267,10 @@ current: index
   </div>
 </section>
 
-<!-- ??? -->
+<!-- 超過 3000 位學員得到了程式超能力 -->
 <section class="share-bg">
   <div class="container py-6 py-md-max">
-    <h2 class="h3 text-center mb-lg position-relative h2-title">專屬你的學習課程<br>超過 3000 位學員得到了程式超能力</h2>
+    <h2 class="h3 text-center mb-lg position-relative h2-title">專屬你的學習課程<br >超過 3000 位學員得到了程式超能力</h2>
     <div class="row">
       <div class="col-lg-9 mx-auto">
         <div class="swiper position-relative">
@@ -359,7 +359,31 @@ current: index
       </div>
     </div>
 </section>
-
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="assets/js/index-w6.js"></script>
+<!-- <script src="assets/js/all.js"></script> -->
+
+<script type="text/javascript">
+   const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    effect: "fade",
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    controller: {
+      inverse: true,
+    },
+  });
+
+
+</script>
+
