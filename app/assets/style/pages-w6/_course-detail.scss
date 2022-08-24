@@ -1,0 +1,12 @@
+.dot{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background: $primary;
+        width: 5px;
+        height: 5px;
+        top:40%;
+        left:0;
+    }
+}

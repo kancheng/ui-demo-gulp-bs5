@@ -1,0 +1,24 @@
+@mixin hide-text {
+  white-space: 101%;
+  overflow: hidden;
+  text-wrap: none;
+}
+
+@mixin underline-deco {
+    content:'';
+    position: absolute;
+    bottom:-16px;
+    width: 50px;
+    height: 2px;
+}
+
+@mixin bg-img {
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin text-gradient {
+    background: linear-gradient(180deg, #09ACF5, #62DB54);
+    background-clip: text;
+    color: transparent;
+}

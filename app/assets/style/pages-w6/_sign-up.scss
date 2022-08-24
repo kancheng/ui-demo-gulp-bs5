@@ -1,0 +1,102 @@
+.triangle{
+    position: relative;
+    z-index:5;
+    &::after{
+        content:"";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        position: absolute; 
+        border: 24px solid;
+        border-color: $dark transparent transparent transparent;
+        left: 48%;
+        bottom:-48px;
+        @include media-breakpoint-up(lg) {
+            left:100%;
+            bottom:150px;
+            right: -48px;
+            top:150px;
+            border-color: transparent transparent transparent $dark;
+        }
+    }
+}
+.timeline{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background-color: $light;
+        height: 2px;
+        left:0;
+        right:0;
+        top:-18px;
+    }
+    &-active-finish {
+        &::after{
+            background-color: $primary;
+        }
+    }
+}
+.timeline-active-first {
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: $primary;
+        height: 2px;
+        width: 50%;
+        top:-18px;
+        z-index:3;
+    }
+}
+.timeline-pointer{
+    position: relative;
+    &::before{
+        position: absolute;
+        content:"";
+        border:1px solid $light;
+        background: $dark2;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        left: 48%;
+        top:-30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index:5;
+    }
+    &-first::before{
+        content:"1";
+    }
+    &-second::before{
+        content:"2";
+    }
+    &-third::before{
+        content:"3";
+    }
+    &-active{
+        color:white;
+        &::before{
+            border:1px solid $primary;
+            background: $primary;
+        }
+    }
+}
+
+.sign-block{
+    @include media-breakpoint-up(lg){
+        position: relative;
+        z-index:1;
+        &::before{
+            position: absolute;
+            content:"";
+            background-color: $dark2;
+            width: 50px;
+            height: 100%;
+            top: 0;
+            bottom:0;
+            left:-15px;
+            z-index:-1;
+        }
+    }
+}

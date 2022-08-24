@@ -1,0 +1,125 @@
+---
+title: Coding Home 程式家教
+layout: ./app/index-coding-w6.ejs
+engine: ejs
+current: sign-up
+---
+
+
+<section class="bg-dark2 pt-6 pb-3 text-white mb-6">
+    <div class="container text-light">
+        <div class="row justify-content-center">
+            <div class="col-9 col-lg-7 timeline">
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-3 col-lg-5">
+                <div class="timeline-pointer timeline-pointer-first timeline-pointer-active">
+                    <p class="mb-0">課程報名</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="timeline-pointer timeline-pointer-second">
+                    <p class="mb-0 ">信用卡付款</p>
+                </div>
+            </div>
+            <div class="col-3 col-lg-5">
+                <div class="timeline-pointer timeline-pointer-third">
+                    <p class="mb-0">付款成功</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mb-max">
+    <div class="row gx-0 gy-6 d-flex align-items-center mx-5">
+        <div class="col-lg-4 bg-dark px-5 py-6 triangle">
+            <div class="card">
+                <div class="card-header text-center p-0 mb-4 border-bottom-0">
+                    <img src="assets/images/img-w6/teacher01.jpg" class="avator border border-primary border-3" alt="photo">
+                </div>
+                <div class="card-body p-0">
+                    <h3 class="card-title fs-5 fw-bold mb-1 text-center">2022 Python 全攻略｜從入門到實務</h3>
+                    <div>
+                        <span class="text-primary d-block text-center mb-2">前端語言</span>
+                        <p class="card-text">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 bg-dark2 p-4 py-lg-6 ps-lg-max pe-lg-5 sign-block">
+            <h2 class="h3 fw-bold text-center">課程報名</h2>
+            <p class="mb-2 fs-5 fw-bold">選擇付款方式</p>
+            <ul class="list-unstyled mb-5 row g-2 row-cols-2 row-cols-lg-5">
+                <li class="col"><a href="#" class="btn btn-outline-primary d-block p-2 px-lg-3 py-lg-3">信用卡付款</a></li>
+                <li class="col"><a href="#" class="btn btn-outline-white d-block p-2 px-lg-3 py-lg-3">超商繳款</a></li>
+                <li class="col"><a href="#" class="btn btn-outline-white d-block p-2 px-lg-3 py-lg-3">ATM轉帳</a></li>
+                <li class="col"><a href="#" class="btn btn-outline-white d-block p-2 px-lg-3 py-lg-3">12期分期付款</a></li>
+            </ul>
+            <p class="mb-4 fs-5 fw-bold">訂單資訊</p>
+            <form>
+                <div class="row row-cols-1 row-cols-lg-2 mb-4">
+                    <div class="col mb-4 mb-lg-0">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" class="form-control" placeholder="請輸入姓名" id="name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="tel" class="form-label">電話</label>
+                        <input type="tel" class="form-control" placeholder="請輸入電話號碼" id="tel" aria-label="tel">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <label for="mail" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="請輸入Email" id="mail" aria-label="email">
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-2 mb-4">
+                    <div class="col mb-4 mb-lg-0">
+                        <label for="course" class="form-label">課程</label>
+                        <select class="form-select form-select" aria-label="form-select" id="course">
+                            <option value="1">1堂50分鐘</option>
+                            <option value="2">3堂50分鐘</option>
+                            <option value="3" selected>10堂50分鐘</option>
+                            <option value="3">20堂50分鐘</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="reserveDate" class="form-label">想預約的日期</label>
+                        <input type="text" class="reserve-date form-control flatpickr flatpickr-input bg-dark2"
+                            placeholder="請選擇日期" id="reserveDate" aria-label="date">
+
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <label for="place" class="form-label">上課地點</label>
+                        <input type="text" class="form-control" placeholder="請輸入上課地點" id="place" aria-label="place">
+                    </div>
+                </div>
+                <div class="d-lg-flex justify-content-between align-items-center">
+                    <span class="d-block mb-4 mb-lg-0 font-monospace fw-bold fs-5">NT$1600</span>
+                    <a type="submit" href="pay.html" class="d-block  btn btn-gradient px-6 py-2 border-0">前往結賬</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- DATE !???  -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    const reserve = flatpickr(".reserve-date", {
+        dateFormat: "Y-m-d",
+        minDate: "today",
+        maxDate: new Date().fp_incr(180),
+        disableMobile: "true",
+    });
+</script>
